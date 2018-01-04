@@ -1,0 +1,9 @@
+﻿{
+  "Name": "Dark Of The Night",
+  "Author": "Hooksal (Jake Huxell)",
+  "Version": "0.1.1",
+  "Description": "Become a vampire in Stardew Valley!",
+  "UniqueID": "Hooksal.DarkOfTheNight",
+  "EntryDll": "DarkOfTheNight.dll",
+  "UpdateKeys": []
+}

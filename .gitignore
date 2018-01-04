@@ -30,3 +30,6 @@
 *.res
 *.state
 *.pch
+
+DarkOfTheNight/obj
+DarkOfTheNight/bin
