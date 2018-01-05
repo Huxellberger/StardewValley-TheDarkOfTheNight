@@ -29,13 +29,16 @@ namespace DarkOfTheNight.Vampire
 
         private void OnLocationChanged(object sender, EventArgsCurrentLocationChanged eventArgs)
         {
+            ModLogging.Log("LocationChanged!");
             _outside = eventArgs.NewLocation.isOutdoors;
         }
 
         private void OnTimeOfDayChanged(object sender, EventArgsIntChanged inTime)
         {
+            ModLogging.Log("Time of day has changed!");
             if (_outside && !IsDarkness())
             {
+                ModLogging.Log("Vulnerable To Damage!");
                 _underlyingCharacter.Stamina -= SunDamagePerCycle;
             }
         }
