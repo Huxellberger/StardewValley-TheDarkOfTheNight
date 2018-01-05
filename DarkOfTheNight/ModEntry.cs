@@ -15,7 +15,7 @@ namespace DarkOfTheNight
         {
             Monitor.Log("Mod has loaded");
 
-            _currentVampire = new VampireCharacter(Game1.player, 10.0f);
+            _currentVampire = new VampireCharacter(Game1.player, DarkOfTheNightConstants.StartingSunDamage);
         }
     }
 }

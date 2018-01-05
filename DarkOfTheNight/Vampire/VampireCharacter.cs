@@ -34,9 +34,9 @@ namespace DarkOfTheNight.Vampire
 
         private void OnTimeOfDayChanged(object sender, EventArgsIntChanged inTime)
         {
-            if (_outside && IsDarkness())
+            if (_outside && !IsDarkness())
             {
-                _underlyingCharacter.stamina -= SunDamagePerCycle;
+                _underlyingCharacter.Stamina -= SunDamagePerCycle;
             }
         }
     }
